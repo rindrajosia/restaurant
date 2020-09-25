@@ -1,7 +1,7 @@
-import _ from 'lodash';
-import header from './header.js';
-import home from './home.js';
-import footer from './footer.js';
+import _ from 'lodash';// eslint-disable-line no-unused-vars
+import header from './header';
+import home from './home';
+import footer from './footer';
 
 function initial() {
   let content = document.getElementById('content');

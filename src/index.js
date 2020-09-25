@@ -1,35 +1,33 @@
-import _ from 'lodash';
-import header from './modules/header.js';
-import home from './modules/home.js';
-import menu from './modules/menu.js';
-import about from './modules/about.js';
-import contact from './modules/contact.js';
-import footer from './modules/footer.js';
-import initial from './modules/initial.js';
+import _ from 'lodash'; // eslint-disable-line no-unused-vars
+import home from './modules/home';
+import menu from './modules/menu';
+import about from './modules/about';
+import contact from './modules/contact';
+import initial from './modules/initial';
 
 initial();
 
-const tab = document.querySelector('.tab');
-const li = tab.getElementsByTagName('li');
-for(let i = 0; i < li.length; i++) {
-  li[i].addEventListener('click', mainPage.bind(li[i], li[i].innerHTML));
-}
-
 function mainPage(page) {
-  const main = document.querySelector("main");
-  main.innerHTML = "";
+  const main = document.querySelector('main');
+  main.innerHTML = '';
   switch (page) {
-    case "Home":
+    case 'Home':
       main.appendChild(home());
       break;
-    case "Menu":
+    case 'Menu':
       main.appendChild(menu());
       break;
-    case "About":
+    case 'About':
       main.appendChild(about());
       break;
-    case "Contact":
+    case 'Contact':
       main.appendChild(contact());
       break;
   }
+}
+
+const tab = document.querySelector('.tab');
+const li = tab.getElementsByTagName('li');
+for (let i = 0; i < li.length; i +=1 ) {
+  li[i].addEventListener('click', mainPage.bind(li[i], li[i].innerHTML));
 }
