@@ -31,6 +31,14 @@ To get a local copy up and running follow these simple example steps:
 ## Show your support
 Give a ⭐️ if you like this project!
 
+# Screenshot
+
+* Menu page
+![screenshot](src/assets/img/home.png)
+
+* Home page
+![screenshot](src/assets/img/menu.png)
+
 ## Authors
 
 👤 **Rindra josia**
