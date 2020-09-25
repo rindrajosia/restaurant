@@ -2,7 +2,6 @@ import _ from 'lodash';
 import '../css/style.css';
 
 function home() {
-    const main = document.createElement('main');
     const full = document.createElement('div');
     full.classList.add('full', 'home-image');
     const container = document.createElement('div');
@@ -23,9 +22,8 @@ function home() {
     container.appendChild(href);
 
     full.appendChild(container);
-    main.appendChild(full);
 
-  return main;
+  return full;
 }
 
 export default home;

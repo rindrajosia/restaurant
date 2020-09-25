@@ -3,7 +3,6 @@ import '../css/style.css';
 
 function contact() {
     const arr = ['Email: rrindrajosia@gmail.com', 'Address: 60 Creekside Lane Avila', 'Phone: +53 345 7'];
-    const main = document.createElement('main');
     const full = document.createElement('div');
     full.classList.add('full', 'contact-image');
     const container = document.createElement('div');
@@ -26,9 +25,8 @@ function contact() {
     container.appendChild(ul);
     container.appendChild(href);
     full.appendChild(container);
-    main.appendChild(full);
 
-  return main;
+  return full;
 }
 
 export default contact;

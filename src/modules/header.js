@@ -3,7 +3,7 @@ import '../css/style.css';
 import Logo from '../assets/img/logo.png';
 
 function header() {
-    const arr = ['Home', 'Menu', 'About us', 'Contact'];
+    const arr = ['Home', 'Menu', 'About', 'Contact'];
     const header = document.createElement('header');
     const logo = document.createElement('div');
     logo.classList.add('logo');

@@ -2,7 +2,6 @@ import _ from 'lodash';
 import '../css/style.css';
 
 function about() {
-    const main = document.createElement('main');
     const full = document.createElement('div');
     full.classList.add('full', 'about-image');
     const container = document.createElement('div');
@@ -23,9 +22,8 @@ function about() {
     container.appendChild(href);
 
     full.appendChild(container);
-    main.appendChild(full);
 
-  return main;
+  return full;
 }
 
 export default about;

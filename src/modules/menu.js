@@ -3,7 +3,6 @@ import '../css/style.css';
 
 function menu() {
     const arr = ['Chicken Bulgogi', 'Karri Rice', 'Tomato Soup', 'Fish Pasta'];
-    const main = document.createElement('main');
     const full = document.createElement('div');
     full.classList.add('full', 'recipe-image');
     const container = document.createElement('div');
@@ -26,9 +25,8 @@ function menu() {
     container.appendChild(ul);
     container.appendChild(href);
     full.appendChild(container);
-    main.appendChild(full);
 
-  return main;
+  return full;
 }
 
 export default menu;

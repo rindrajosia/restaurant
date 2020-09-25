@@ -4,9 +4,11 @@ import home from './home.js';
 import footer from './footer.js';
 
 function initial() {
-  let content = document.getElementById('content')
+  let content = document.getElementById('content');
+  const main = document.createElement('main');
   content.appendChild(header());
-  content.appendChild(home());
+  main.appendChild(home());
+  content.appendChild(main);
   content.appendChild(footer());
   return content;
 }
