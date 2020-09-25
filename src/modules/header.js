@@ -14,7 +14,7 @@ function header() {
   const ul = document.createElement('ul');
   ul.classList.add('tab');
   for (let i = 0; i <= arr.length - 1; i += 1) {
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     li.innerHTML = arr[i];
     ul.appendChild(li);
   }

@@ -11,7 +11,7 @@ function contact() {
   title.innerHTML = 'Get In Touch';
   const ul = document.createElement('ul');
   for (let i = 0; i <= arr.length - 1; i += 1) {
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     li.innerHTML = arr[i];
     ul.appendChild(li);
   }
