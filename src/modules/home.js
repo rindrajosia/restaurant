@@ -18,7 +18,7 @@ function home() {
   const href = document.createElement('a');
   href.setAttribute('href', '#');
   href.classList.add('myButton');
-  href.innerHTML = `Home Page`;
+  href.innerHTML = 'Home Page';
   container.appendChild(href);
   full.appendChild(container);
   return full;

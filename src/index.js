@@ -23,11 +23,13 @@ function mainPage(page) {
     case 'Contact':
       main.appendChild(contact());
       break;
+    default:
+      break;
   }
 }
 
 const tab = document.querySelector('.tab');
 const li = tab.getElementsByTagName('li');
-for (let i = 0; i < li.length; i +=1 ) {
+for (let i = 0; i < li.length; i += 1) {
   li[i].addEventListener('click', mainPage.bind(li[i], li[i].innerHTML));
 }

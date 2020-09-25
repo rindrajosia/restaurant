@@ -4,7 +4,7 @@ import home from './home';
 import footer from './footer';
 
 function initial() {
-  let content = document.getElementById('content');
+  const content = document.getElementById('content');
   const main = document.createElement('main');
   content.appendChild(header());
   main.appendChild(home());

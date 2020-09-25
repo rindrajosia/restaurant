@@ -10,15 +10,15 @@ function contact() {
   const title = document.createElement('h2');
   title.innerHTML = 'Get In Touch';
   const ul = document.createElement('ul');
-  for (let i = 0; i <= arr.length - 1; i++) {
-     let li = document.createElement('li');
-     li.innerHTML = arr[i];
-     ul.appendChild(li);
+  for (let i = 0; i <= arr.length - 1; i += 1) {
+    let li = document.createElement('li');
+    li.innerHTML = arr[i];
+    ul.appendChild(li);
   }
   const href = document.createElement('a');
   href.setAttribute('href', '#');
   href.classList.add('myButton');
-  href.innerHTML = `Contact page`;
+  href.innerHTML = 'Contact page';
   container.appendChild(title);
   container.appendChild(ul);
   container.appendChild(href);

@@ -18,7 +18,7 @@ function about() {
   const href = document.createElement('a');
   href.setAttribute('href', '#');
   href.classList.add('myButton');
-  href.innerHTML = `About Page`;
+  href.innerHTML = 'About Page';
   container.appendChild(href);
   full.appendChild(container);
   return full;

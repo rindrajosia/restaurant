@@ -10,7 +10,7 @@ function footer() {
   imgLogo.src = Logo;
   logo.appendChild(imgLogo);
   const p = document.createElement('p');
-  p.innerHTML = `Copyright ©2020 All rights reserved | Made by Josia`;
+  p.innerHTML = 'Copyright ©2020 All rights reserved | Made by Josia';
   footer.appendChild(logo);
   footer.appendChild(p);
   return footer;
