@@ -2,7 +2,7 @@ import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 import Logo from '../assets/img/logo.png';
 
-function header() {
+const header = () => {
   const arr = ['Home', 'Menu', 'About', 'Contact'];
   const header = document.createElement('header');
   const logo = document.createElement('div');
@@ -22,6 +22,6 @@ function header() {
   header.appendChild(logo);
   header.appendChild(menu);
   return header;
-}
+};
 
 export default header;

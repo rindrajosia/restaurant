@@ -1,7 +1,7 @@
 import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 
-function home() {
+const home = () => {
   const full = document.createElement('div');
   full.classList.add('full', 'home-image');
   const container = document.createElement('div');
@@ -22,6 +22,6 @@ function home() {
   container.appendChild(href);
   full.appendChild(container);
   return full;
-}
+};
 
 export default home;

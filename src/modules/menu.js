@@ -1,7 +1,7 @@
 import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 
-function menu() {
+const menu = () => {
   const arr = ['Chicken Bulgogi', 'Karri Rice', 'Tomato Soup', 'Fish Pasta'];
   const full = document.createElement('div');
   full.classList.add('full', 'recipe-image');
@@ -24,6 +24,6 @@ function menu() {
   container.appendChild(href);
   full.appendChild(container);
   return full;
-}
+};
 
 export default menu;

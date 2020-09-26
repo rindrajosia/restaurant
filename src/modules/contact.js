@@ -1,7 +1,7 @@
 import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 
-function contact() {
+const contact = () => {
   const arr = ['Email: rrindrajosia@gmail.com', 'Address: 60 Creekside Lane Avila', 'Phone: +53 345 7'];
   const full = document.createElement('div');
   full.classList.add('full', 'contact-image');
@@ -24,6 +24,6 @@ function contact() {
   container.appendChild(href);
   full.appendChild(container);
   return full;
-}
+};
 
 export default contact;

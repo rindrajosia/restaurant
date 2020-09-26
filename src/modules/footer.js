@@ -2,7 +2,7 @@ import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 import Logo from '../assets/img/logo.png';
 
-function footer() {
+const footer = () => {
   const footer = document.createElement('footer');
   const logo = document.createElement('div');
   logo.classList.add('logo');
@@ -14,6 +14,6 @@ function footer() {
   footer.appendChild(logo);
   footer.appendChild(p);
   return footer;
-}
+};
 
 export default footer;

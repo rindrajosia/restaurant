@@ -1,7 +1,7 @@
 import _ from 'lodash';// eslint-disable-line no-unused-vars
 import '../css/style.css';
 
-function about() {
+const about = () => {
   const full = document.createElement('div');
   full.classList.add('full', 'about-image');
   const container = document.createElement('div');
@@ -22,6 +22,6 @@ function about() {
   container.appendChild(href);
   full.appendChild(container);
   return full;
-}
+};
 
 export default about;

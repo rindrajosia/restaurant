@@ -3,7 +3,7 @@ import header from './header';
 import home from './home';
 import footer from './footer';
 
-function initial() {
+const initial = () => {
   const content = document.getElementById('content');
   const main = document.createElement('main');
   content.appendChild(header());
@@ -11,5 +11,5 @@ function initial() {
   content.appendChild(main);
   content.appendChild(footer());
   return content;
-}
+};
 export default initial;
